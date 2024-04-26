@@ -1,8 +1,8 @@
-﻿namespace HR.LeaveManagement.Application.Persistence
+﻿namespace HR.LeaveManagement.Application.Contracts.Persistence
 {
     public interface IGenericRepository<T> where T : class
     {
-        Task<IReadOnlyList<T>> GetAsync();
+        Task<List<T>> GetAsync();
         Task<T> GetByIdAsync(int id);
         Task CreateAsync(T entity);
         Task UpdateAsync(T entity);
