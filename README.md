@@ -2,7 +2,7 @@
   
   ## Section Review
   
-  core Section:    
+  Core Section:    
 
        Domain Project: 
              Entities
@@ -23,5 +23,16 @@
             
       Intrasturctrue Project: 
             For Thrid-Party Servcies
+
+              
+  API:     
+      
+      Injecting  project dependencies
+      Create Database using EF Core command
+      Implemented Thin Controllers
+      Setup Global Exception Handling
+      Add application configuration (Email and database)
+      Added application features
+            
 
 
