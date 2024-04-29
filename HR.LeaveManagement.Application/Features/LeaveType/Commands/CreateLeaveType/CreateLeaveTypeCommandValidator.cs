@@ -29,7 +29,7 @@ namespace HR.LeaveManagement.Application.Features.LeaveType.Commands.CreateLeave
 
         private async Task<bool> LeaveTypeNameUnique(CreateLeaveTypeCommand command, CancellationToken token)
         {
-            return _leaveTypeRepository.IsLeaveTypeUnique(command.Name);
+            return await _leaveTypeRepository.IsLeaveTypeUnique(command.Name);
         }
     }
 }
