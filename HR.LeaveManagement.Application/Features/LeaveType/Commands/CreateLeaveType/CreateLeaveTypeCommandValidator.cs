@@ -21,7 +21,7 @@ namespace HR.LeaveManagement.Application.Features.LeaveType.Commands.CreateLeave
 
             RuleFor(q => q)
                 .MustAsync(LeaveTypeNameUnique)
-                .WithMessage("Leave type already exists");
+                .WithMessage("This Leave type already exists");
 
 
             this._leaveTypeRepository = leaveTypeRepository;

@@ -30,6 +30,9 @@ namespace HR.LeaveManagement.Api.Controllers
 
         // GET api/<LeaveTypesController>/5
         [HttpGet("{id}")]
+        //Action return types  
+        [ProducesResponseType(typeof(IEnumerable<ActionResult<LeaveTypeDetailsDto>>), 200)]
+        [ProducesResponseType(404)]
         public async Task<ActionResult<LeaveTypeDetailsDto>> Get(int id)
         {
             var leaveType = await _mediator.Send(new GetLeaveTypeDetailsQuery(id));
