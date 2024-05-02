@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using HR.LeaveManagement.Application.Contracts.Persistence;
+using HR.LeaveManagement.Application.Features.LeaveType.Queries.GetLeaveTypeDetails;
 using MediatR;
 
 namespace HR.LeaveManagement.Application.Features.LeaveType.Queries.GetAllLeaveTypes
@@ -26,6 +27,11 @@ namespace HR.LeaveManagement.Application.Features.LeaveType.Queries.GetAllLeaveT
             //return list fo DTO Object
             //_logger.LogInformation("Leave types were retrieved successfully");
             return data;
+        }
+
+        public async Task Handle(GetLeaveTypeDetailsQuery getLeaveTypeDetailsQuery, CancellationToken none)
+        {
+            throw new NotImplementedException();
         }
     }
 }
