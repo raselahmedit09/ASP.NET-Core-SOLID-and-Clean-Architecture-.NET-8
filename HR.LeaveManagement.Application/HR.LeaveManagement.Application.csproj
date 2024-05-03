@@ -17,10 +17,13 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Features\LeaveAllocation\Commands\" />
-    <Folder Include="Features\LeaveAllocation\Queries\" />
-    <Folder Include="Features\LeaveRequest\Commands\" />
-    <Folder Include="Features\LeaveRequest\Queries\" />
+    <Folder Include="Features\LeaveAllocation\Queries\GetLeaveAllocationDetails\" />
+    <Folder Include="Features\LeaveAllocation\Queries\GetLeaveAllocations\" />
+    <Folder Include="Features\LeaveRequest\Commands\CreateLeaveAllocation\" />
+    <Folder Include="Features\LeaveRequest\Commands\DeleteLeaveAllocation\" />
+    <Folder Include="Features\LeaveRequest\Commands\UpdateLeaveAllocation\" />
+    <Folder Include="Features\LeaveRequest\Queries\GetLeaveAllocationDetails\" />
+    <Folder Include="Features\LeaveRequest\Queries\GetLeaveAllocations\" />
   </ItemGroup>
 
 </Project>

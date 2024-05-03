@@ -22,7 +22,7 @@ namespace HR.LeaveManagement.Application.Features.LeaveType.Commands.UpdateLeave
             // convert to domain entity object
             var leaveTypeToUpdate = _mapper.Map<Domain.LeaveType>(request);
 
-            // add to database
+            // update to database
             await _leaveTypeRepository.UpdateAsync(leaveTypeToUpdate);
 
             // return Unit value
