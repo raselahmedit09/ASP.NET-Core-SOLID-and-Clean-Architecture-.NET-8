@@ -27,7 +27,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HR.LeaveManagement.Api", "H
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HR.LeaveManagement.Application.UnitTests", "HR.LeaveManagement.Application.UnitTests\HR.LeaveManagement.Application.UnitTests.csproj", "{AD03BDC3-0BAA-4242-9C78-5F38FE5C27AD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HR.LeaveManagement.Persistence.IntegrationTests", "HR.LeaveManagement.Persistence.IntegrationTests\HR.LeaveManagement.Persistence.IntegrationTests.csproj", "{F23E9D0B-358B-4806-958D-CEF00DD9DE84}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HR.LeaveManagement.Persistence.IntegrationTests", "HR.LeaveManagement.Persistence.IntegrationTests\HR.LeaveManagement.Persistence.IntegrationTests.csproj", "{F23E9D0B-358B-4806-958D-CEF00DD9DE84}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ApiGeteway", "ApiGeteway", "{5F3BC062-A62F-45BA-81A0-B47F764CFEAA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OcelotApiGeteway", "OcelotApiGeteway\OcelotApiGeteway.csproj", "{486F5663-D0FE-4C40-824B-670C417914EA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,6 +67,10 @@ Global
 		{F23E9D0B-358B-4806-958D-CEF00DD9DE84}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F23E9D0B-358B-4806-958D-CEF00DD9DE84}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F23E9D0B-358B-4806-958D-CEF00DD9DE84}.Release|Any CPU.Build.0 = Release|Any CPU
+		{486F5663-D0FE-4C40-824B-670C417914EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{486F5663-D0FE-4C40-824B-670C417914EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{486F5663-D0FE-4C40-824B-670C417914EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{486F5663-D0FE-4C40-824B-670C417914EA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -79,6 +87,7 @@ Global
 		{94C751AD-E41C-4855-B768-04111C19D08D} = {1DF8C453-AF1D-438C-9D9F-3BBDCFD40049}
 		{AD03BDC3-0BAA-4242-9C78-5F38FE5C27AD} = {9388ACB1-B804-4DFE-AA41-ECF86196B303}
 		{F23E9D0B-358B-4806-958D-CEF00DD9DE84} = {9388ACB1-B804-4DFE-AA41-ECF86196B303}
+		{486F5663-D0FE-4C40-824B-670C417914EA} = {5F3BC062-A62F-45BA-81A0-B47F764CFEAA}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {DDF83D27-98E8-4E4D-A549-5170FCC6061D}

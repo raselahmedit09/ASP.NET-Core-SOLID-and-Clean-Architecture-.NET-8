@@ -4,17 +4,16 @@
     "windowsAuthentication": false,
     "anonymousAuthentication": true,
     "iisExpress": {
-      "applicationUrl": "http://localhost:49044",
-      "sslPort": 44321
+      "applicationUrl": "http://localhost:29237",
+      "sslPort": 44371
     }
   },
   "profiles": {
-    "https": {
+    "OcelotApiGeteway": {
       "commandName": "Project",
       "dotnetRunMessages": true,
       "launchBrowser": true,
-      "launchUrl": "swagger",
-      "applicationUrl": "https://localhost:7091",
+      "applicationUrl": "https://localhost:7090",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
