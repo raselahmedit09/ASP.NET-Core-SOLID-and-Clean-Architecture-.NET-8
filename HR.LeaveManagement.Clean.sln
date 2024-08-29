@@ -33,6 +33,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ApiGeteway", "ApiGeteway", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OcelotApiGeteway", "OcelotApiGeteway\OcelotApiGeteway.csproj", "{486F5663-D0FE-4C40-824B-670C417914EA}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "RestApiClient", "RestApiClient", "{770D7253-FCA2-465A-84A9-44B5755C446B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestApiClient", "RestApiClient\RestApiClient.csproj", "{B91375C6-B1D2-46C7-AD21-BEF3E87AAC11}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -71,6 +75,10 @@ Global
 		{486F5663-D0FE-4C40-824B-670C417914EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{486F5663-D0FE-4C40-824B-670C417914EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{486F5663-D0FE-4C40-824B-670C417914EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B91375C6-B1D2-46C7-AD21-BEF3E87AAC11}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B91375C6-B1D2-46C7-AD21-BEF3E87AAC11}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B91375C6-B1D2-46C7-AD21-BEF3E87AAC11}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B91375C6-B1D2-46C7-AD21-BEF3E87AAC11}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -88,6 +96,7 @@ Global
 		{AD03BDC3-0BAA-4242-9C78-5F38FE5C27AD} = {9388ACB1-B804-4DFE-AA41-ECF86196B303}
 		{F23E9D0B-358B-4806-958D-CEF00DD9DE84} = {9388ACB1-B804-4DFE-AA41-ECF86196B303}
 		{486F5663-D0FE-4C40-824B-670C417914EA} = {5F3BC062-A62F-45BA-81A0-B47F764CFEAA}
+		{B91375C6-B1D2-46C7-AD21-BEF3E87AAC11} = {770D7253-FCA2-465A-84A9-44B5755C446B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {DDF83D27-98E8-4E4D-A549-5170FCC6061D}

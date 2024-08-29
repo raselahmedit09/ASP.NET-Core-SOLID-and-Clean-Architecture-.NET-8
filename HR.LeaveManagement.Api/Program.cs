@@ -2,6 +2,7 @@ using HR.LeaveManagement.Api.MIddleware;
 using HR.LeaveManagement.Application;
 using HR.LeaveManagement.Infrastructure;
 using HR.LeaveManagement.Persistence;
+using Microsoft.OpenApi.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -17,11 +18,19 @@ builder.Services.AddCors(e => e.AddPolicy("all", builder =>
     builder.AllowAnyOrigin()
     .AllowAnyMethod()
     .AllowAnyHeader();
+    //.WithOrigins("https://localhost:5001", "http://localhost:5001"));
 }));
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+builder.Services.AddSwaggerGen(
+    options =>
+    {
+        options.SwaggerDoc("v1", new OpenApiInfo { Title = "HR.LeaveManagement.Api", Version = "v1" });
+
+        // Add custom document filter to set the host
+        options.DocumentFilter<HostDocumentFilter>();
+    });
 
 var app = builder.Build();
 

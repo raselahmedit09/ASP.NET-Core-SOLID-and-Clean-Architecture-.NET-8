@@ -14,5 +14,16 @@
       ],
       "UpstreamPathTemplate": "/{everything}"
     }
+    //{
+    //  "DownstreamPathTemplate": "/api/LeaveTypes",
+    //  "DownstreamScheme": "https",
+    //  "DownstreamHostAndPorts": [
+    //    {
+    //      "Host": "localhost",
+    //      "Port": 7091
+    //    }
+    //  ],
+    //  "UpstreamPathTemplate": "/geteway/LeaveTypes"
+    //}
   ]
 }
