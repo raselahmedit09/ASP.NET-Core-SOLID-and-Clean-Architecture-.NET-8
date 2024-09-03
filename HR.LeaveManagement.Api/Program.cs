@@ -18,7 +18,7 @@ builder.Services.AddCors(e => e.AddPolicy("all", builder =>
     builder.AllowAnyOrigin()
     .AllowAnyMethod()
     .AllowAnyHeader();
-    //.WithOrigins("https://localhost:5001", "http://localhost:5001"));
+    //.WithOrigins("https://localhost:4201", "http://localhost:4202"));
 }));
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
@@ -31,6 +31,14 @@ builder.Services.AddSwaggerGen(
         // Add custom document filter to set the host
         options.DocumentFilter<HostDocumentFilter>();
     });
+
+// Add NSwag services
+builder.Services.AddOpenApiDocument(config =>
+{
+    config.Title = "HR.LeaveManagement.Api";
+    config.Version = "v1";
+    // Other configurations
+});
 
 var app = builder.Build();
 
@@ -48,5 +56,8 @@ app.UseHttpsRedirection();
 app.UseAuthorization();
 
 app.MapControllers();
+
+// Add NSwag middleware
+app.UseOpenApi(); // Serve the OpenAPI/Swagger document
 
 app.Run();

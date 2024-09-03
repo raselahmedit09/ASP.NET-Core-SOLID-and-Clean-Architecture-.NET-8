@@ -7,6 +7,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Features\LeaveRequest\**" />
+    <EmbeddedResource Remove="Features\LeaveRequest\**" />
+    <None Remove="Features\LeaveRequest\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="AutoMapper" Version="13.0.1" />
     <PackageReference Include="FluentValidation" Version="11.9.1" />
     <PackageReference Include="MediatR" Version="12.2.0" />
@@ -19,11 +25,6 @@
   <ItemGroup>
     <Folder Include="Features\LeaveAllocation\Queries\GetLeaveAllocationDetails\" />
     <Folder Include="Features\LeaveAllocation\Queries\GetLeaveAllocations\" />
-    <Folder Include="Features\LeaveRequest\Commands\CreateLeaveAllocation\" />
-    <Folder Include="Features\LeaveRequest\Commands\DeleteLeaveAllocation\" />
-    <Folder Include="Features\LeaveRequest\Commands\UpdateLeaveAllocation\" />
-    <Folder Include="Features\LeaveRequest\Queries\GetLeaveAllocationDetails\" />
-    <Folder Include="Features\LeaveRequest\Queries\GetLeaveAllocations\" />
   </ItemGroup>
 
 </Project>
