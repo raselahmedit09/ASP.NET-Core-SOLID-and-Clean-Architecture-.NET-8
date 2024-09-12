@@ -18,7 +18,7 @@ namespace HR.Employee.Api.Controllers
 
 
         [HttpGet]
-        public async Task<List<LeaveTypeDto>> apiGetWay_LeaveTypes_GetAsync()
+        public async Task<List<LeaveTypeDto>> GetLeave()
         {
             return await _leaveManagementModuleAPI.LeaveTypes_GetAsync();
         }

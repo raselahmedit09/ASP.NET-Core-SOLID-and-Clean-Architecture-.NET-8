@@ -1,4 +1,5 @@
-﻿using HR.LeaveManagement.Application.Features.LeaveType.Commands.CreateLeaveType;
+﻿using APIRestClient.HR.EmployeeModule;
+using HR.LeaveManagement.Application.Features.LeaveType.Commands.CreateLeaveType;
 using HR.LeaveManagement.Application.Features.LeaveType.Commands.DeleteLeaveType;
 using HR.LeaveManagement.Application.Features.LeaveType.Commands.UpdateLeaveType;
 using HR.LeaveManagement.Application.Features.LeaveType.Queries.GetAllLeaveTypes;
@@ -15,10 +16,12 @@ namespace HR.LeaveManagement.Api.Controllers
     public class LeaveTypesController : ControllerBase
     {
         private readonly IMediator _mediator;
+        private readonly EmployeeModuleAPI _employeeModuleAPI;
 
-        public LeaveTypesController(IMediator mediator)
+        public LeaveTypesController(IMediator mediator, EmployeeModuleAPI employeeModuleAPI)
         {
             this._mediator = mediator;
+            this._employeeModuleAPI = employeeModuleAPI;
         }
         // GET: api/<LeaveTypesController>
         [HttpGet]
@@ -74,6 +77,12 @@ namespace HR.LeaveManagement.Api.Controllers
             await _mediator.Send(command);
             return Ok(true);
             //return NoContent();
+        }
+
+        [HttpGet("GetEmployee")]
+        public async Task<string> GetEmployee()
+        {
+            return await _employeeModuleAPI.Registration_RegistrationAsync();
         }
     }
 }

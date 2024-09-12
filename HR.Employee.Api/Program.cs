@@ -12,6 +12,14 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+
+// Add NSwag services
+builder.Services.AddOpenApiDocument(config =>
+{
+    config.Title = "HR.Employee.Api";
+    config.Version = "v1";
+});
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -26,5 +34,8 @@ app.UseHttpsRedirection();
 app.UseAuthorization();
 
 app.MapControllers();
+
+// Add NSwag middleware
+app.UseOpenApi(); // Serve the OpenAPI/Swagger document
 
 app.Run();

@@ -10,9 +10,16 @@
         {
           "Host": "localhost",
           "Port": 7091
+        },
+        {
+          "Host": "localhost",
+          "Port": 7093
         }
       ],
-      "UpstreamPathTemplate": "/{everything}"
+      "UpstreamPathTemplate": "/{everything}",
+      "LoadBalancerOptions": {
+        "Type": "RoundRobin" // This is the default, but you can specify other strategies like LeastConnection
+      }
     }
     //{
     //  "DownstreamPathTemplate": "/api/LeaveTypes",
