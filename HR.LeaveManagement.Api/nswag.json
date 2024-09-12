@@ -89,7 +89,7 @@
       "generateNativeRecords": false,
       "generateContractsOutput": true,
       "contractsNamespace": "APIRestClient.HR.LeaveManagementModule.Contacts",
-      "contractsOutputFilePath": "../RestApiClient/LeaveManagement/ModuleContacts.cs",
+      "contractsOutputFilePath": "../RestApiClient/LeaveManagement/LeaveManagementModuleContacts.cs",
       "parameterDateTimeFormat": "s",
       "parameterDateFormat": "yyyy-MM-dd",
       "generateUpdateJsonSerializerSettingsMethod": true,
@@ -145,7 +145,7 @@
       "templateDirectory": null,
       "serviceHost": null,
       "serviceSchemes": null,
-      "output": "../RestApiClient/LeaveManagement/ModuleAPI.cs",
+      "output": "../RestApiClient/LeaveManagement/LeaveManagementModuleAPI.cs",
       "newLineBehavior": "Auto"
     }
   }
