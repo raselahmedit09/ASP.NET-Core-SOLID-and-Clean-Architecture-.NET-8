@@ -31,7 +31,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HR.LeaveManagement.Persiste
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ApiGeteway", "ApiGeteway", "{5F3BC062-A62F-45BA-81A0-B47F764CFEAA}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OcelotApiGeteway", "OcelotApiGeteway\OcelotApiGeteway.csproj", "{486F5663-D0FE-4C40-824B-670C417914EA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OcelotApiGateway", "OcelotApiGeteway\OcelotApiGateway.csproj", "{486F5663-D0FE-4C40-824B-670C417914EA}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "RestApiClient", "RestApiClient", "{770D7253-FCA2-465A-84A9-44B5755C446B}"
 EndProject
@@ -43,7 +43,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Employee", "Employee", "{5D
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "API", "API", "{E2E8D251-4E5C-470B-A871-2AB5146F3530}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HR.Employee.Api", "HR.Employee.Api\HR.Employee.Api.csproj", "{FD1D701A-419A-4AB7-8C3E-9970BB2E99AC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HR.Employee.Api", "HR.Employee.Api\HR.Employee.Api.csproj", "{FD1D701A-419A-4AB7-8C3E-9970BB2E99AC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -9,7 +9,7 @@
     }
   },
   "profiles": {
-    "OcelotApiGeteway": {
+    "OcelotApiGateway": {
       "commandName": "Project",
       "dotnetRunMessages": true,
       "launchBrowser": true,

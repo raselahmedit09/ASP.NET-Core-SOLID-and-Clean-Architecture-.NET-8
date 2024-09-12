@@ -4,7 +4,7 @@ using RestApiClient;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.Services.RestApiClientGetewayServices();
+builder.Services.RestApiClientGatewayServices();
 
 
 builder.Services.AddControllers();

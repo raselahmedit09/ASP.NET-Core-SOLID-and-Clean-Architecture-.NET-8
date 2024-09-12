@@ -6,7 +6,7 @@ namespace RestApiClient
 {
     public static class ServiceRegistrationExtensions
     {
-        public static IServiceCollection RestApiClientGetewayServices(this IServiceCollection services)
+        public static IServiceCollection RestApiClientGatewayServices(this IServiceCollection services)
         {
 
             // Leave Management api 

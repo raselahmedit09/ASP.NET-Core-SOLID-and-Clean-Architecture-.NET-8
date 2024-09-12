@@ -30,7 +30,7 @@
     //      "Port": 7091
     //    }
     //  ],
-    //  "UpstreamPathTemplate": "/geteway/LeaveTypes"
+    //  "UpstreamPathTemplate": "/gateway/LeaveTypes"
     //}
   ]
 }
