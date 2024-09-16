@@ -35,7 +35,8 @@ or Download zip file and unzip the project.
 - Click Properties from the solution :
 ![HR Management System](https://github.com/user-attachments/assets/49d662f1-13bd-4635-9a07-df6dddd7d87f)
 
-- run or debug from the Solution 
+![image](https://github.com/user-attachments/assets/09680276-9b64-4c73-be1e-f6efe6e26801)
+
 
 
 ## NSwag Client Generation
