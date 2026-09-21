@@ -15,27 +15,27 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "API", "API", "{1DF8C453-AF1
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UI", "UI", "{F0FFA7E7-B6FD-43DA-9EA6-FA5173246927}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HR.LeaveManagement.Domain", "HR.LeaveManagement.Domain\HR.LeaveManagement.Domain.csproj", "{AB2381A1-7ED1-4F8C-8806-D2CDFBBFE00C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HR.LeaveManagement.Domain", "ServiceApplications\LeaveManagement\Core\HR.LeaveManagement.Domain\HR.LeaveManagement.Domain.csproj", "{AB2381A1-7ED1-4F8C-8806-D2CDFBBFE00C}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HR.LeaveManagement.Application", "HR.LeaveManagement.Application\HR.LeaveManagement.Application.csproj", "{40B7AEE3-91D2-4A89-A8D0-CDE389EA0C60}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HR.LeaveManagement.Application", "ServiceApplications\LeaveManagement\Core\HR.LeaveManagement.Application\HR.LeaveManagement.Application.csproj", "{40B7AEE3-91D2-4A89-A8D0-CDE389EA0C60}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HR.LeaveManagement.Persistence", "HR.LeaveManagement.Persistence\HR.LeaveManagement.Persistence.csproj", "{FED81498-7F3E-4E06-81BF-88D3C95452F7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HR.LeaveManagement.Persistence", "ServiceApplications\LeaveManagement\Infrastructure\HR.LeaveManagement.Persistence\HR.LeaveManagement.Persistence.csproj", "{FED81498-7F3E-4E06-81BF-88D3C95452F7}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HR.LeaveManagement.Infrastructure", "HR.LeaveManagement.Infrastructure\HR.LeaveManagement.Infrastructure.csproj", "{F9DD4550-8C5C-4E4D-A4F1-CD6FBE3BF384}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HR.LeaveManagement.Infrastructure", "ServiceApplications\LeaveManagement\Infrastructure\HR.LeaveManagement.Infrastructure\HR.LeaveManagement.Infrastructure.csproj", "{F9DD4550-8C5C-4E4D-A4F1-CD6FBE3BF384}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HR.LeaveManagement.Api", "HR.LeaveManagement.Api\HR.LeaveManagement.Api.csproj", "{94C751AD-E41C-4855-B768-04111C19D08D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HR.LeaveManagement.Api", "ServiceApplications\LeaveManagement\API\HR.LeaveManagement.Api\HR.LeaveManagement.Api.csproj", "{94C751AD-E41C-4855-B768-04111C19D08D}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HR.LeaveManagement.Application.UnitTests", "HR.LeaveManagement.Application.UnitTests\HR.LeaveManagement.Application.UnitTests.csproj", "{AD03BDC3-0BAA-4242-9C78-5F38FE5C27AD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HR.LeaveManagement.Application.UnitTests", "Test\HR.LeaveManagement.Application.UnitTests\HR.LeaveManagement.Application.UnitTests.csproj", "{AD03BDC3-0BAA-4242-9C78-5F38FE5C27AD}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HR.LeaveManagement.Persistence.IntegrationTests", "HR.LeaveManagement.Persistence.IntegrationTests\HR.LeaveManagement.Persistence.IntegrationTests.csproj", "{F23E9D0B-358B-4806-958D-CEF00DD9DE84}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HR.LeaveManagement.Persistence.IntegrationTests", "Test\HR.LeaveManagement.Persistence.IntegrationTests\HR.LeaveManagement.Persistence.IntegrationTests.csproj", "{F23E9D0B-358B-4806-958D-CEF00DD9DE84}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ApiGateway", "ApiGateway", "{5F3BC062-A62F-45BA-81A0-B47F764CFEAA}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OcelotApiGateway", "OcelotApiGeteway\OcelotApiGateway.csproj", "{486F5663-D0FE-4C40-824B-670C417914EA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OcelotApiGateway", "ApiGateway\OcelotApiGateway\OcelotApiGateway.csproj", "{486F5663-D0FE-4C40-824B-670C417914EA}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "RestApiClient", "RestApiClient", "{770D7253-FCA2-465A-84A9-44B5755C446B}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RestApiClient", "RestApiClient\RestApiClient.csproj", "{B91375C6-B1D2-46C7-AD21-BEF3E87AAC11}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RestApiClient", "RestApiClient\RestApiClient\RestApiClient.csproj", "{B91375C6-B1D2-46C7-AD21-BEF3E87AAC11}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "LeaveManagement", "LeaveManagement", "{8E5CB34E-6720-476A-9C28-60F70466EF58}"
 EndProject
@@ -43,7 +43,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Employee", "Employee", "{5D
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "API", "API", "{E2E8D251-4E5C-470B-A871-2AB5146F3530}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HR.Employee.Api", "HR.Employee.Api\HR.Employee.Api.csproj", "{FD1D701A-419A-4AB7-8C3E-9970BB2E99AC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HR.Employee.Api", "ServiceApplications\Employee\API\HR.Employee.Api\HR.Employee.Api.csproj", "{FD1D701A-419A-4AB7-8C3E-9970BB2E99AC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

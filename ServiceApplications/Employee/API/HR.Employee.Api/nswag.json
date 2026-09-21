@@ -89,7 +89,7 @@
       "generateNativeRecords": false,
       "generateContractsOutput": true,
       "contractsNamespace": "APIRestClient.HR.EmployeeModule.Contacts",
-      "contractsOutputFilePath": "../RestApiClient/Employee/EmployeeModuleContacts.cs",
+      "contractsOutputFilePath": "../../../../RestApiClient/RestApiClient/Employee/EmployeeModuleContacts.cs",
       "parameterDateTimeFormat": "s",
       "parameterDateFormat": "yyyy-MM-dd",
       "generateUpdateJsonSerializerSettingsMethod": true,
@@ -145,7 +145,7 @@
       "templateDirectory": null,
       "serviceHost": null,
       "serviceSchemes": null,
-      "output": "../RestApiClient/Employee/EmployeeModuleAPI.cs",
+      "output": "../../../../RestApiClient/RestApiClient/Employee/EmployeeModuleAPI.cs",
       "newLineBehavior": "Auto"
     }
   }

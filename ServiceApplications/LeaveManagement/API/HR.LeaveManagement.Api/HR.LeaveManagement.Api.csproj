@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
@@ -7,6 +7,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.4">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
     <PackageReference Include="NSwag.AspNetCore" Version="14.1.0" />
     <PackageReference Include="NSwag.MSBuild" Version="14.1.0">
       <PrivateAssets>all</PrivateAssets>
@@ -16,7 +20,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\RestApiClient\RestApiClient.csproj" />
+    <ProjectReference Include="..\..\Core\HR.LeaveManagement.Application\HR.LeaveManagement.Application.csproj" />
+    <ProjectReference Include="..\..\Infrastructure\HR.LeaveManagement.Infrastructure\HR.LeaveManagement.Infrastructure.csproj" />
+    <ProjectReference Include="..\..\Infrastructure\HR.LeaveManagement.Persistence\HR.LeaveManagement.Persistence.csproj" />
+    <ProjectReference Include="..\..\..\..\RestApiClient\RestApiClient\RestApiClient.csproj" />
   </ItemGroup>
 
   <PropertyGroup>
