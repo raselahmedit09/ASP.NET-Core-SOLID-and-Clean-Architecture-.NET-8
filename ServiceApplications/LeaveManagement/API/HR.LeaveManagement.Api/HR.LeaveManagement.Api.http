@@ -1,6 +1,46 @@
-@HR.LeaveManagement.Api_HostAddress = http://localhost:5136
+@HR.LeaveManagement.Api_HostAddress = https://localhost:7091
+# Swap in the gateway to test the same calls through Ocelot:
+# @HR.LeaveManagement.Api_HostAddress = https://localhost:7090
 
-GET {{HR.LeaveManagement.Api_HostAddress}}/weatherforecast/
+### Get all leave types
+GET {{HR.LeaveManagement.Api_HostAddress}}/api/LeaveTypes
+Accept: application/json
+
+### Get one leave type (404 if it doesn't exist)
+GET {{HR.LeaveManagement.Api_HostAddress}}/api/LeaveTypes/1
+Accept: application/json
+
+### Create a leave type (Name must be unique and under 70 chars; DefaultDays must be 2-99)
+POST {{HR.LeaveManagement.Api_HostAddress}}/api/LeaveTypes
+Content-Type: application/json
+
+{
+  "name": "Sick",
+  "defaultDays": 12
+}
+
+### Update a leave type (the id goes in the body, not the route)
+PUT {{HR.LeaveManagement.Api_HostAddress}}/api/LeaveTypes
+Content-Type: application/json
+
+{
+  "id": 1,
+  "name": "Vacation",
+  "defaultDays": 15
+}
+
+### Delete a leave type (also deletes its allocations and requests)
+DELETE {{HR.LeaveManagement.Api_HostAddress}}/api/LeaveTypes/2
+
+### Cross-service call: LeaveManagement API -> gateway -> Employee API (needs all three apps running)
+GET {{HR.LeaveManagement.Api_HostAddress}}/api/LeaveTypes/GetEmployee
+
+### Leave allocations (still the scaffolded placeholder controller)
+GET {{HR.LeaveManagement.Api_HostAddress}}/api/LeaveAllocation
+Accept: application/json
+
+### Leave requests (still the scaffolded placeholder controller)
+GET {{HR.LeaveManagement.Api_HostAddress}}/api/LeaveRequests
 Accept: application/json
 
 ###

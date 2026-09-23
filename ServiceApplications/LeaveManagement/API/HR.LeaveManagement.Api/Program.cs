@@ -53,6 +53,9 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+// Must run before HTTPS redirection and MapControllers so preflight and redirected responses carry CORS headers.
+app.UseCors("all");
+
 app.UseHttpsRedirection();
 
 app.UseAuthorization();

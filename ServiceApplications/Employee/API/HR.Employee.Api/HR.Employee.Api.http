@@ -1,6 +1,15 @@
-@HR.Employee.Api_HostAddress = http://localhost:5246
+@HR.Employee.Api_HostAddress = https://localhost:7093
+# Swap in the gateway to test the same calls through Ocelot:
+# @HR.Employee.Api_HostAddress = https://localhost:7090
 
-GET {{HR.Employee.Api_HostAddress}}/weatherforecast/
+### Registration (stub, returns a fixed string)
+GET {{HR.Employee.Api_HostAddress}}/api/Registration
+
+### Login (stub, returns a fixed string)
+GET {{HR.Employee.Api_HostAddress}}/api/Registration/Login_1
+
+### Cross-service call: Employee API -> gateway -> LeaveManagement API (needs all three apps running)
+GET {{HR.Employee.Api_HostAddress}}/api/Leave
 Accept: application/json
 
 ###

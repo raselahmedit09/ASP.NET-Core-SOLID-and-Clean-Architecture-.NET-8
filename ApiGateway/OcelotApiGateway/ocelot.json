@@ -1,36 +1,117 @@
 {
   "GlobalConfiguration": {
-    "BaseUrl": "http://localhost:7090"
+    "BaseUrl": "https://localhost:7090"
   },
   "Routes": [
     {
-      "DownstreamPathTemplate": "/{everything}",
+      "UpstreamPathTemplate": "/api/LeaveTypes",
+      "DownstreamPathTemplate": "/api/LeaveTypes",
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
           "Port": 7091
-        },
+        }
+      ]
+    },
+    {
+      "UpstreamPathTemplate": "/api/LeaveTypes/{everything}",
+      "DownstreamPathTemplate": "/api/LeaveTypes/{everything}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7091
+        }
+      ]
+    },
+    {
+      "UpstreamPathTemplate": "/api/LeaveAllocation",
+      "DownstreamPathTemplate": "/api/LeaveAllocation",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7091
+        }
+      ]
+    },
+    {
+      "UpstreamPathTemplate": "/api/LeaveAllocation/{everything}",
+      "DownstreamPathTemplate": "/api/LeaveAllocation/{everything}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7091
+        }
+      ]
+    },
+    {
+      "UpstreamPathTemplate": "/api/LeaveRequests",
+      "DownstreamPathTemplate": "/api/LeaveRequests",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7091
+        }
+      ]
+    },
+    {
+      "UpstreamPathTemplate": "/api/LeaveRequests/{everything}",
+      "DownstreamPathTemplate": "/api/LeaveRequests/{everything}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7091
+        }
+      ]
+    },
+    {
+      "UpstreamPathTemplate": "/api/Leave",
+      "DownstreamPathTemplate": "/api/Leave",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
           "Port": 7093
         }
-      ],
-      "UpstreamPathTemplate": "/{everything}",
-      "LoadBalancerOptions": {
-        "Type": "RoundRobin" // This is the default, but you can specify other strategies like LeastConnection
-      }
+      ]
+    },
+    {
+      "UpstreamPathTemplate": "/api/Leave/{everything}",
+      "DownstreamPathTemplate": "/api/Leave/{everything}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7093
+        }
+      ]
+    },
+    {
+      "UpstreamPathTemplate": "/api/Registration",
+      "DownstreamPathTemplate": "/api/Registration",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7093
+        }
+      ]
+    },
+    {
+      "UpstreamPathTemplate": "/api/Registration/{everything}",
+      "DownstreamPathTemplate": "/api/Registration/{everything}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7093
+        }
+      ]
     }
-    //{
-    //  "DownstreamPathTemplate": "/api/LeaveTypes",
-    //  "DownstreamScheme": "https",
-    //  "DownstreamHostAndPorts": [
-    //    {
-    //      "Host": "localhost",
-    //      "Port": 7091
-    //    }
-    //  ],
-    //  "UpstreamPathTemplate": "/gateway/LeaveTypes"
-    //}
   ]
 }
