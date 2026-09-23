@@ -12,7 +12,6 @@ namespace HR.LeaveManagement.Application.UnitTests.Features.LeaveTypes.Commands
     public class CreateLeaveTypeCommandHandlerTests
     {
         private readonly IMapper _mapper;
-        private readonly Mock<ILeaveTypeRepository> _mockCategoryRepository;
         private Mock<ILeaveTypeRepository> _mockRepo;
 
         public CreateLeaveTypeCommandHandlerTests()
@@ -34,7 +33,7 @@ namespace HR.LeaveManagement.Application.UnitTests.Features.LeaveTypes.Commands
 
             await handler.Handle(new CreateLeaveTypeCommand() { Name = "Test Leave", DefaultDays = 10, }, CancellationToken.None);
 
-            var leaveTypes = await _mockCategoryRepository.Object.GetAsync();
+            var leaveTypes = await _mockRepo.Object.GetAsync();
             leaveTypes.Count.ShouldBe(4);
         }
     }

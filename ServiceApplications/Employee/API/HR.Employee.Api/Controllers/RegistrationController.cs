@@ -12,5 +12,11 @@ namespace HR.Employee.Api.Controllers
         {
             return " Yes! Registration is succeeded";
         }
+
+        [HttpGet("Login_1")]
+        public async Task<string> Login()
+        {
+            return " Yes! Login is succeeded";
+        }
     }
 }
